@@ -3,7 +3,11 @@ import './App.css'
 import AddTransaction from './components/add'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [transactions, setTransctions] = useState([]);
+  const add = (transactionItem,amount,transactionType)=>{
+    setTransctions((transactions)=>[...transactions,{transactionItem:transactionItem, amount:amount,transactionType:transactionType}]);
+  }
 
   return (
     <>
