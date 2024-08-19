@@ -37,3 +37,27 @@ button{
   margin-left:45px;
   margin-top: 4px;
 }
+.List-Item{
+  display: flex;
+  justify-content: space-between;
+  border-color: white;
+  width: 500px;
+  height: 70px;
+  margin-top: 5px;
+}
+.List-Item h6{
+  padding-top: 25px;
+  padding-left: 12px;
+}
+.ExpenseIndicator{
+  display: block;
+  border-right: 4px solid red;
+  width: 100px;
+  height: 47px;
+}
+.IncomeIndicator{
+  display: block;
+  border-right: 4px solid rgb(62, 194, 36);
+  width: 100px;
+  height: 47px;
+}
