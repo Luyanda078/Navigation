@@ -1,12 +1,13 @@
 import DisplayTransaction from "./DisplayTransaction"
 import AddTransaction from "./add"
-function Home(){
+function Home(props){
     return(
         <div>
-            <DisplayTransaction/>
-            <AddTransaction/>
+            <DisplayTransaction transactions={props.transactions}/>
+            <AddTransaction add={props.add}/>
 
         </div>
+
 
     )
 } 
